@@ -42,7 +42,7 @@ To run the website locally and test the website do the following:
         * Lines that have been marked as `<DIR>` are directories, and ones that are not are files.
       * The command `cd` is used to traverse the files system.
         * `cd ..` moves backwards to the parent directory
-        * `cd ----` where `---` is the name of the directory that  you want to step in. The names are case sensitive so if you want to step into the Documents folder, make sure to type `cd Documents`.
+        * `cd ----` where `----` is the name of the directory that  you want to step in. The names are case sensitive so if you want to step into the Documents folder, make sure to type `cd Documents`.
 3. Type the command `bundler exec jekyll serve`. This will launch a local process tied to the command prompt that runs a local server off of port 4000 that you will use to get to the website. If you were to close (meaning like press the X instead of minimize) this command prompt, the local server would terminate and the website would no longer be accessbile. Make sure that whilst you wanna look at the website, this command is running.
 4. Open your browser of choice and type in `http://localhost:4000`. This will take you to the website.
 
