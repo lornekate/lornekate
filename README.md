@@ -22,9 +22,27 @@ The only dependency to run this project locally is to have Jekyll installed on y
 2.  Install Jekyll and Bundler
     1. Search `cmd` in the start menu and run the application.
     2. Type `gem install jekyll bundler`. This may take a while.
-    3. Once the installation is complete (you will know by seeing a <C: \Users\...>: on the bottom most line). Check to see if Jekyll has been properly installed by then typing `jekyll -v`. It will then say `jekyll ....` meaning the version of Jekyll that you have installed. This may take a second to appear. If Jekyll was not properlly installed, it will say something like jekyll command not recognized.
+    3. Once the installation is complete (you will know by seeing a C: \Users\...>: on the bottom most line). Check to see if Jekyll has been properly installed by then typing `jekyll -v`. It will then say `jekyll ....` meaning the version of Jekyll that you have installed. This may take a second to appear. If Jekyll was not properlly installed, it will say something like jekyll command not recognized.
    
 If you are not on Windows, please follow the corresponding tutorial on the [Jekyll Site](https://jekyllrb.com/docs/installation/).
 
 # Running the Dev (Development) Environment
+
+Firstly, ensure that you have a text editory of choice installed on your machine. This may range from things like [Notepad++](https://notepad-plus-plus.org/downloads/) or some sort of IDE. I would recommend using something like (Visual Studio Code)[https://code.visualstudio.com/download]. 
+
+Secondly, make sure that you have the most updated version of the github repository locally on your machine. If you don't want to learn how to use git commands - you can use (Github Desktop)[https://desktop.github.com/] instead that provides a handy GUI for you to use. Make sure that you have the repsitory cloned and have pulled the most recent updates from the repo. 
+
+To run the website locally and test the website do the following:
+1. Open the command prompt by typing `cmd` in the start menu and opening the cmd.exe program.
+2. Navigate to the location of the repository.
+    * HINTS: 
+      * The line "C:\Users\\...>" indicates which folder you currently reside.
+      * The command `dir` lists all things within the directory.
+        * The last field in the lines are file/folder names.
+        * Lines that have been marked as `<DIR>` are directories, and ones that are not are files.
+      * The command `cd` is used to traverse the files system.
+        * `cd ..` moves backwards to the parent directory
+        * `cd ----` where `----` is the name of the directory that  you want to step in. The names are case sensitive so if you want to step into the Documents folder, make sure to type `cd Documents`.
+3. Type the command `bundler exec jekyll serve`. This will launch a local process tied to the command prompt that runs a local server off of port 4000 that you will use to get to the website. If you were to close (meaning like press the X instead of minimize) this command prompt, the local server would terminate and the website would no longer be accessbile. Make sure that whilst you wanna look at the website, this command is running.
+4. Open your browser of choice and type in `http://localhost:4000`. This will take you to the website.
 
