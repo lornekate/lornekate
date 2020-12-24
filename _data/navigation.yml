@@ -1,0 +1,6 @@
+- name: Home
+  link: /
+- name: Events
+  link: /events
+- name: Registry
+  link: /registry
