@@ -3,7 +3,6 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto w-100">
                 {% for item in site.data.navigation %}
@@ -22,10 +21,11 @@
                     </li>
                     {% endif %}
                 {% endfor %}
-                    <li class="nav-item ms-auto">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-                    </li>
+                    
             </ul>
+        </div>
+        <div class="nav-item ms-auto">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
         </div>
     </div>
 </nav>
