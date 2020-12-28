@@ -7,9 +7,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto w-100">
                 {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                    <li clas="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{ item.name }}</a>
+                        <ul class="dropdown-menu">
+                        {% for subitem in item.dropitems %}
+                            <li><a class= "dropdown-item" href="{{ subitem.link }}">{{subitem.name}}</a></li>
+                        {% endfor %}
+                        </ul>
+                    </li>
+                    {% else%}
                     <li {% if page.url == item.link %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
                         <a href="{{ item.link }}" class="nav-link"> {{item.name}} </a>
                     </li>
+                    {% endif %}
                 {% endfor %}
                     <li class="nav-item ms-auto">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
