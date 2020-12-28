@@ -1,0 +1,21 @@
+- name: Home
+  dropdown: false
+  link: /
+- name: Events
+  dropdown: true
+  dropitems:
+    - name: Engagement Party
+      link: engage-party-info
+    - name: Wedding
+      link: wedding-info
+  link: /events
+- name: Registry
+  dropdown: true
+  dropitems:
+    - name: Crate & Barrel
+      link: # TODO NEEDS THE BARREL LINK
+    - name: Hudson's Bay Company
+      link: # TODO NEEDS THE HB LINK
+    - name: William Ashley
+      link: # TODO NEEDS THE WA LINK
+  link: /registry
