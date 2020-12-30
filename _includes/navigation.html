@@ -7,7 +7,7 @@
             <ul class="navbar-nav mr-auto w-100">
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
-                    <li clas="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{ item.name }}</a>
                         <ul class="dropdown-menu">
                         {% for subitem in item.dropitems %}

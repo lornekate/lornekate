@@ -1,14 +1,16 @@
 - name: Home
   dropdown: false
   link: /
-- name: Events
+- name: Engagement Party
+  dropdown: false
+  link: engagement-party
+- name: Wedding
   dropdown: true
   dropitems:
-    - name: Engagement Party
-      link: engage-party-info
-    - name: Wedding
+    - name: Wedding Overview
       link: wedding-info
-  link: /events
+    - name: Recommendations
+      link: wedding-recommendations
 - name: Registry
   dropdown: true
   dropitems:
@@ -18,4 +20,3 @@
       link: # TODO NEEDS THE HB LINK
     - name: William Ashley
       link: # TODO NEEDS THE WA LINK
-  link: /registry
