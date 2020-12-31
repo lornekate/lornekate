@@ -2,9 +2,57 @@
 layout: default
 title: Home
 ---
-<div class="text-center">
-    PICTURES BOX   
-    <!-- TODO figure out some liquid+data magic to not have to manually create a grid -->
+<div class="container align-center">
+    {% assign flip = false %}
+    {% for pic in site.data.homepics %}
+        {% assign remainder2 = forloop.index | modulo: 2 %}
+        {% assign remainder5 = forloop.index | modulo: 5 %}
+        {% unless flip %}
+            {% if forloop.first %}
+                <div class="row">
+            {% endif %}
+            {% if remainder5 == 0 %}
+                    <div class="col-2">
+                        <img src="{{ pic.link }}">
+                    </div>
+                </div>
+                {% unless forloop.last %}
+                    {% assign flip = true %}
+                    <div class="row">
+                {% else %}
+                    </div>
+                {% endunless %}
+            {% elsif remainder2 == 1 %}
+                    <div class="col-2">
+                        <img src="{{ pic.link }}">
+            {% elsif remainder2 == 0 %}
+                        <img src="{{ pic.link }}"> 
+                    </div>
+            {% endif %}
+        {% else %}
+            {% assign remainder6 = forloop.index | modulo: 6 %}
+            {% if remainder6 == 0 %}
+                <div class="col-2">
+                    <img src="{{ pic.link }}">
+                </div>
+            {% elsif remainder2 == 1 %}
+                <div class="col-2">
+                    <img src="{{ pic.link }}">
+            {% elsif remainder2 == 0 %}
+                    <img src="{{ pic.link }}">
+                </div>
+            {% endif %}
+            {% if remainder5 == 0 %}
+                </div>
+                {% if forloop.last %}
+                    </div>
+                {% else %}
+                    {% assign flip = false %}
+                    <div class="row">
+                {% endif %}
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
 </div>
 <h1 class="text-center display-2"> TITLE </h1>
 <div>
