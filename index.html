@@ -13,7 +13,7 @@ title: Home
             {% endif %}
             {% if remainder5 == 0 %}
                     <div class="col-2">
-                        <img src="{{ pic.link }}">
+                        <img src="{{ pic.link }}" height="400">
                     </div>
                 </div>
                 {% unless forloop.last %}
@@ -24,22 +24,22 @@ title: Home
                 {% endunless %}
             {% elsif remainder2 == 1 %}
                     <div class="col-2">
-                        <img src="{{ pic.link }}">
+                        <img src="{{ pic.link }}" height=200>
             {% elsif remainder2 == 0 %}
-                        <img src="{{ pic.link }}"> 
+                        <img src="{{ pic.link }}" height=200> 
                     </div>
             {% endif %}
         {% else %}
             {% assign remainder6 = forloop.index | modulo: 6 %}
             {% if remainder6 == 0 %}
                 <div class="col-2">
-                    <img src="{{ pic.link }}">
+                    <img src="{{ pic.link }}" height=400>
                 </div>
             {% elsif remainder2 == 1 %}
                 <div class="col-2">
-                    <img src="{{ pic.link }}">
+                    <img src="{{ pic.link }}" height=200>
             {% elsif remainder2 == 0 %}
-                    <img src="{{ pic.link }}">
+                    <img src="{{ pic.link }}" height=200>
                 </div>
             {% endif %}
             {% if remainder5 == 0 %}
@@ -60,4 +60,3 @@ title: Home
         SOME RANDOM TEXT 
     </p>
 </div>
-<div></div>

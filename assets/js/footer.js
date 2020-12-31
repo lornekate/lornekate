@@ -10,7 +10,7 @@
         let footerHeight = footerEl.scrollHeight;
         let compare = viewHeight - footerHeight;
         let footerTop =  footerEl.getBoundingClientRect()["top"];
-        if (!(compare === footerTop)){
+        if (!(compare <= footerTop)){
             footerEl.style.marginTop = (compare - footerTop).toString() + "px";
         }
     };
