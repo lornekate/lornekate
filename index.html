@@ -2,44 +2,44 @@
 layout: default
 title: Home
 ---
-<div class="container align-center">
+<div class="container">
     {% assign flip = false %}
     {% for pic in site.data.homepics %}
         {% assign remainder2 = forloop.index | modulo: 2 %}
         {% assign remainder5 = forloop.index | modulo: 5 %}
         {% unless flip %}
             {% if forloop.first %}
-                <div class="row">
+                <div class="row justify-content-center">
             {% endif %}
             {% if remainder5 == 0 %}
-                    <div class="col-2">
-                        <img src="{{ pic.link }}" height="400">
+                    <div class="col-2 flex-fill">
+                        <img class="m-1 w-100" src="{{ pic.link }}" height=408>
                     </div>
                 </div>
                 {% unless forloop.last %}
                     {% assign flip = true %}
-                    <div class="row">
+                    <div class="row justify-content-center">
                 {% else %}
                     </div>
                 {% endunless %}
             {% elsif remainder2 == 1 %}
-                    <div class="col-2">
-                        <img src="{{ pic.link }}" height=200>
+                    <div class="col-2 flex-fill">
+                        <img class="m-1 w-100" src="{{ pic.link }}" height=200>
             {% elsif remainder2 == 0 %}
-                        <img src="{{ pic.link }}" height=200> 
+                        <img class="m-1 w-100" src="{{ pic.link }}" height=200> 
                     </div>
             {% endif %}
         {% else %}
             {% assign remainder6 = forloop.index | modulo: 6 %}
             {% if remainder6 == 0 %}
-                <div class="col-2">
-                    <img src="{{ pic.link }}" height=400>
+                <div class="col-2  flex-fill">
+                    <img class="m-1 w-100" src="{{ pic.link }}" height=408>
                 </div>
             {% elsif remainder2 == 1 %}
-                <div class="col-2">
-                    <img src="{{ pic.link }}" height=200>
+                <div class="col-2  flex-fill">
+                    <img class="m-1 w-100" src="{{ pic.link }}" height=200>
             {% elsif remainder2 == 0 %}
-                    <img src="{{ pic.link }}" height=200>
+                    <img class="m-1 w-100" src="{{ pic.link }}" height=200>
                 </div>
             {% endif %}
             {% if remainder5 == 0 %}
@@ -48,7 +48,7 @@ title: Home
                     </div>
                 {% else %}
                     {% assign flip = false %}
-                    <div class="row">
+                    <div class="row justify-content-center">
                 {% endif %}
             {% endif %}
         {% endunless %}
