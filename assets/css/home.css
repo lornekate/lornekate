@@ -1,22 +1,18 @@
 ---
 ---
 
-.landingImage {
+.gallery {
+    background-image: url("/assets/images/temp/b10.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#landingImage {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: peru;
     width: 100%;
     height: 200px;
-}
-
-#above {
-    background-image: url("/assets/images/tbd/bannerop1.jpg");
+    background-image: url("/assets/images/banner/banner.jpg");
     background-position: bottom 34% right 0%;
 }
-
-#knee {
-    background-image: url("/assets/images/tbd/bannerop2.jpg");
-    background-position: bottom 55% right 0%;
-}
-
-
