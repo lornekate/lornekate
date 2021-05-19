@@ -9,6 +9,8 @@
   dropitems:
     - name: Wedding Overview
       link: wedding-info
+    - name: Schedule
+      link: schedule
     - name: Recommendations
       link: wedding-recommendations
 - name: Registry
