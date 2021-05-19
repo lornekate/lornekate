@@ -2,62 +2,90 @@
 layout: default
 title: Home
 ---
- <!-- IMAGE GALLERY -->
-<div class="container">
-    {% assign flip = false %}
+<!-- IMAGE GALLERY -->
+<div class="gallery container-fluid">
+    
+    {% assign oddrow = true %}
     {% for pic in site.data.homepics %}
-        {% assign remainder2 = forloop.index | modulo: 2 %}
-        {% assign remainder5 = forloop.index | modulo: 5 %}
-        {% unless flip %}
-            {% if forloop.first %}
-                <div class="row">
+        {% comment %} new row starts @ beginning or every 7 pictures {% endcomment %}
+        {% assign mod8 = forloop.index | modulo: 8 %}
+        {% assign iseven = forloop.index | modulo: 2 %}
+        {% if forloop.first or mod8 == 0 %}
+            <div class="row justify-content-center">
+        {% endif %}
+
+        {% comment %} COLUMN 1 {% endcomment %}
+        {% if oddrow %}
+            {% comment %} if we are on an odd row, first column has 2 pictures in it {% endcomment %}
+            {% if mod8 == 1 %}
+                <div class="col galCol text-center">
+                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                {% continue %}
+            {% elsif mod8 == 2%}
+                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                </div>
+                {% continue %}
             {% endif %}
-            {% if remainder5 == 0 %}
-                    <div class="col text-center">
+        {% elsif oddrow == false and mod8 == 0 %}
+            {% comment %} else, we are on an even row, first column has 1 picture in it {% endcomment %}
+            <div class="col galCol text-center">
+                <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+            </div>
+            {% continue %}
+        {% endif %}
+
+        {% comment %} COLUMN 2 & 3 {% endcomment %}
+        {% if oddrow %}
+            {% comment %} every odd index is start of new column, as long as less than 7 {% endcomment %}
+            {% if mod8 < 7 %}
+                {% if iseven == 1 %}
+                    <div class="col galCol text-center">
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    {% continue %}
+                {% else %}
                         <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                     </div>
-                </div>
-                {% unless forloop.last %}
-                    {% assign flip = true %}
-                    <div class="row ">
-                {% else %}
-                    </div>
-                {% endunless %}
-            {% elsif remainder2 == 1 %}
-                    <div class="col text-center">
-                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
-            {% elsif remainder2 == 0 %}
-                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}> 
-                    </div>
-            {% endif %}
-        {% else %}
-            {% assign remainder6 = forloop.index | modulo: 6 %}
-            {% if remainder6 == 0 %}
-                <div class="col text-center">
-                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
-                </div>
-            {% elsif remainder2 == 1 %}
-                <div class="col text-center">
-                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
-            {% elsif remainder2 == 0 %}
-                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
-                </div>
-            {% endif %}
-            {% if remainder5 == 0 %}
-                </div>
-                {% if forloop.last %}
-                    </div>
-                {% else %}
-                    {% assign flip = false %}
-                    <div class="row">
+                    {% continue %}
                 {% endif %}
             {% endif %}
-        {% endunless %}
+        {% else %}
+            {% comment %} every even index is start of new column, as long as less than 7 {% endcomment %}
+            {% if mod8 < 5%}
+                {% if iseven == 1 %}
+                    <div class="col galCol text-center">
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    {% continue %}
+                {% else %}
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    </div>
+                    {% continue %}
+                {% endif %}
+            {% endif %}
+        {% endif %}
+
+        {% comment %} COLUMN 4 {% endcomment %}
+        {% if oddrow %}
+            {% comment %} odd row has 1 image {% endcomment %}
+                <div class="col galCol text-center">
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}> 
+                </div>
+            </div>
+            {% assign oddrow = false %}
+            {% continue %}
+        {% else %}
+            {% comment %} even row has 2 images {% endcomment %}
+            {% if iseven == 1 %}
+                <div class="col galCol text-center">
+                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                {% continue %}
+            {% else %}
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    </div>
+                </div>
+                {% assign oddrow = true %}
+                {% continue %}
+            {% endif %}
+        {% endif %}
     {% endfor %}
-</div>
-<h1 class="text-center display-2"> Welcome </h1>
-<div>
-    <p class="p-5 mb-0">
-        LORNE AND KATE IS THE BEST !!
-    </p>
+
 </div>

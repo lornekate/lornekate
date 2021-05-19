@@ -1,40 +1,59 @@
+# row 1
 - name: img1
-  link: assets/images/temp/l1.jpg
+  link: assets/images/gallery/l1.jpg
   width: 266
   height: 200
 - name: img2
-  link: assets/images/temp/l2.jpg
+  link: assets/images/gallery/l2.jpg
   width: 266
   height: 200
 - name: img3
-  link: assets/images/temp/l3.jpg
+  link: assets/images/gallery/l3.jpg
   width: 267
   height: 200
 - name: img4
-  link: assets/images/temp/l4.jpg
+  link: assets/images/gallery/l4.jpg
+  width: 266
+  height: 200
+- name: img3
+  link: assets/images/gallery/l3.jpg
+  width: 267
+  height: 200
+- name: img4
+  link: assets/images/gallery/l4.jpg
   width: 266
   height: 200
 - name: img5
-  link: assets/images/temp/p1.jpg
+  link: assets/images/gallery/p1.jpg
   width: 267
   height: 408
+# row 2
 - name: img6
-  link: assets/images/temp/p2.jpg
+  link: assets/images/gallery/p2.jpg
   width: 267
   height: 408
 - name: img7
-  link: assets/images/temp/l5.jpg
+  link: assets/images/gallery/l5.jpg
   width: 267
   height: 200
 - name: img8
-  link: assets/images/temp/l6.jpg
+  link: assets/images/gallery/l6.jpg
   width: 222
   height: 200
 - name: img9
-  link: assets/images/temp/l7.jpg
+  link: assets/images/gallery/l7.jpg
   width: 267
   height: 200
 - name: img10
-  link: assets/images/temp/l8.jpg
+  link: assets/images/gallery/l8.jpg
   width: 266
   height: 200
+- name: img9
+  link: assets/images/gallery/l7.jpg
+  width: 267
+  height: 200
+- name: img10
+  link: assets/images/gallery/l8.jpg
+  width: 266
+  height: 200
+# row 3
