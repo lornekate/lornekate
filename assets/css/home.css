@@ -7,6 +7,10 @@
     background-size: cover;
 }
 
+.galCol {
+    max-width: 275px;
+}
+
 #landingImage {
     background-repeat: no-repeat;
     background-size: cover;

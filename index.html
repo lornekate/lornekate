@@ -11,25 +11,25 @@ title: Home
         {% assign mod8 = forloop.index | modulo: 8 %}
         {% assign iseven = forloop.index | modulo: 2 %}
         {% if forloop.first or mod8 == 0 %}
-            <div class="row">
+            <div class="row justify-content-center">
         {% endif %}
 
         {% comment %} COLUMN 1 {% endcomment %}
         {% if oddrow %}
             {% comment %} if we are on an odd row, first column has 2 pictures in it {% endcomment %}
             {% if mod8 == 1 %}
-                <div class="col text-center">
-                    <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                <div class="col galCol text-center">
+                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                 {% continue %}
             {% elsif mod8 == 2%}
-                    <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                 </div>
                 {% continue %}
             {% endif %}
         {% elsif oddrow == false and mod8 == 0 %}
             {% comment %} else, we are on an even row, first column has 1 picture in it {% endcomment %}
-            <div class="col text-center">
-                <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+            <div class="col galCol text-center">
+                <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
             </div>
             {% continue %}
         {% endif %}
@@ -39,11 +39,11 @@ title: Home
             {% comment %} every odd index is start of new column, as long as less than 7 {% endcomment %}
             {% if mod8 < 7 %}
                 {% if iseven == 1 %}
-                    <div class="col text-center">
-                        <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    <div class="col galCol text-center">
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                     {% continue %}
                 {% else %}
-                        <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                     </div>
                     {% continue %}
                 {% endif %}
@@ -52,11 +52,11 @@ title: Home
             {% comment %} every even index is start of new column, as long as less than 7 {% endcomment %}
             {% if mod8 < 5%}
                 {% if iseven == 1 %}
-                    <div class="col text-center">
-                        <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                    <div class="col galCol text-center">
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                     {% continue %}
                 {% else %}
-                        <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                     </div>
                     {% continue %}
                 {% endif %}
@@ -66,8 +66,8 @@ title: Home
         {% comment %} COLUMN 4 {% endcomment %}
         {% if oddrow %}
             {% comment %} odd row has 1 image {% endcomment %}
-                <div class="col text-center">
-                        <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}> 
+                <div class="col galCol text-center">
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}> 
                 </div>
             </div>
             {% assign oddrow = false %}
@@ -75,11 +75,11 @@ title: Home
         {% else %}
             {% comment %} even row has 2 images {% endcomment %}
             {% if iseven == 1 %}
-                <div class="col text-center">
-                    <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                <div class="col galCol text-center">
+                    <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                 {% continue %}
             {% else %}
-                        <img class="" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
+                        <img class="m-1" src="{{ pic.link }}" height={{ pic.height }} width={{ pic.width }}>
                     </div>
                 </div>
                 {% assign oddrow = true %}
