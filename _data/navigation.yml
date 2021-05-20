@@ -3,16 +3,16 @@
   link: /
 - name: Engagement Party
   dropdown: false
-  link: engagement-party
+  link: /engagement-party.html
 - name: Wedding
   dropdown: true
   dropitems:
     - name: Wedding Overview
-      link: wedding-info
+      link: /wedding/info.html
     - name: Schedule
-      link: schedule
+      link: /wedding/schedule.html
     - name: Recommendations
-      link: wedding-recommendations
+      link: /wedding/recommendations.html
 - name: Registry
   dropdown: true
   dropitems:
