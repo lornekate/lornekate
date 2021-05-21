@@ -1,10 +1,13 @@
 - name: Home
+  render: true
   dropdown: false
   link: /
 - name: Engagement Party
+  render: true
   dropdown: false
   link: /engagement-party.html
 - name: Wedding
+  render: false
   dropdown: true
   dropitems:
     - name: Wedding Overview
@@ -14,6 +17,7 @@
     - name: Recommendations
       link: /wedding/recommendations.html
 - name: Registry
+  render: true
   dropdown: true
   dropitems:
     - name: Crate & Barrel
