@@ -1,0 +1,64 @@
+---
+---
+
+@font-face {
+    font-family: LissaWeb;
+    src: url("/assets/fonts/lissa/Lissa.otf") format("opentype");
+}
+
+.lissaFont {
+    font-family: LissaWeb;
+}
+
+.landingText {
+    color: #fff;
+    line-height: 1;
+    height: 100px;
+    font-size: 7.5vw;
+}
+
+.landingTop {
+    margin-bottom: 0;
+    margin-left: 15vw;
+}
+
+.landingBottom {
+    margin-bottom:0;
+    margin-left: 17vw;
+}
+
+@media (max-width: 1200px){
+    .landingText {
+        color: #fff;
+        line-height: 1;
+        height: 100px;
+        font-size: 9vw;
+    }
+}
+
+@media (max-width: 1000px){
+    .landingText {
+        color: #fff;
+        line-height: 1;
+        height: 100px;
+        font-size: 12vw;
+    }
+}
+
+@media (max-width: 670px){
+    .landingText {
+        color: #fff;
+        line-height: 1;
+        height: 100px;
+        font-size: 15vw;
+    }
+}
+
+@media (max-width: 480px){
+    .landingTop {
+        padding-top: 5vh;
+    }
+    .landingBottom {
+        padding-top: 5vh;
+    }
+}
