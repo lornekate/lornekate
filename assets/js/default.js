@@ -53,12 +53,13 @@
         e.preventDefault();
         let code = document.getElementById("login-code").value;
         let res = api.authenticate(code);
-        if (res.authenticated){
+        if (res.authenticated === true){
             document.getElementById("loginForm").reset();
+            document.getElementById("loginErrorMessage").innerHTML = res.message;
             addLogout(res.data);
         } else {
             document.getElementById("loginForm").reset();
-            // somehow tell user to try again
+            document.getElementById("loginErrorMessage").innerHTML = res.message;
         }
     }
 

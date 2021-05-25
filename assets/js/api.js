@@ -33,9 +33,9 @@ let api = (function(){
     module.authenticate = (code) => {
         if(code === localStorage.getItem('code')){
             localStorage.setItem('validated', 'true');
-            return {'authenticated' : true, 'data': getNavUpdate()};
+            return {'authenticated' : true, 'data': getNavUpdate(), 'message' : ""};
         } else {
-            return {'authenticated': true, 'data': ""};
+            return {'authenticated': false, 'data': "", 'message': "Wrong password."};
         }
     };
 
