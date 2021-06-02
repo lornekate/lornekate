@@ -11,10 +11,14 @@
         <title>{{ page.title }}</title>
     </head>
 
-    <body class="">
-        <div class="lissaFont" id="landingImage">
-            <p class="landingText landingTop">Lorne & Kate</p>
-            <p class="landingText landingBottom">05.17.2022</p>
+    <body>
+        <div class="backtoblackFont" id="landingImage">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2">
+                    <div class="backtoblackLandingText name">Lorne & Kate</div>
+                    <div class="backtoblackLandingText date">05.17.2022</div>
+                </div>
+            </div>
         </div>
         {% include navigation.html %}
         {{ content }}

@@ -16,12 +16,12 @@
   width: 266
   height: 200
 - name: img3
-  link: assets/images/gallery/l3.jpg
+  link: assets/images/gallery/l5.jpg
   width: 267
   height: 200
 - name: img4
-  link: assets/images/gallery/l4.jpg
-  width: 266
+  link: assets/images/gallery/l7.jpg
+  width: 267
   height: 200
 - name: img5
   link: assets/images/gallery/p1.jpg
@@ -33,27 +33,27 @@
   width: 267
   height: 408
 - name: img7
-  link: assets/images/gallery/l5.jpg
-  width: 267
-  height: 200
-- name: img8
-  link: assets/images/gallery/l6.jpg
-  width: 222
-  height: 200
-- name: img9
-  link: assets/images/gallery/l7.jpg
-  width: 267
-  height: 200
-- name: img10
   link: assets/images/gallery/l8.jpg
   width: 266
   height: 200
+- name: img8
+  link: assets/images/gallery/l9.jpg
+  width: 267
+  height: 200
 - name: img9
-  link: assets/images/gallery/l7.jpg
+  link: assets/images/gallery/l10.jpg
   width: 267
   height: 200
 - name: img10
-  link: assets/images/gallery/l8.jpg
+  link: assets/images/gallery/l11.JPG
+  width: 266
+  height: 200
+- name: img9
+  link: assets/images/gallery/l13.jpg
+  width: 266
+  height: 200
+- name: img10
+  link: assets/images/gallery/l14.JPG
   width: 266
   height: 200
 # row 3

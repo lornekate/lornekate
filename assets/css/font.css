@@ -2,63 +2,41 @@
 ---
 
 @font-face {
-    font-family: LissaWeb;
-    src: url("/assets/fonts/lissa/Lissa.otf") format("opentype");
+    font-family: BacktoblackWeb;
+    src: url("/assets/fonts/back-to-black/back-to-black-demo/Back\ to\ Black\ Demo.ttf") format("truetype");
 }
 
-.lissaFont {
-    font-family: LissaWeb;
+.backtoblackFont {
+    font-family: BacktoblackWeb;
 }
 
-.landingText {
+.backtoblackLandingText {
     color: #fff;
-    line-height: 1;
-    height: 100px;
-    font-size: 7.5vw;
+    font-size: 4vw;
+    margin-top: 4vw;
 }
 
-.landingTop {
-    margin-bottom: 0;
-    margin-left: 15vw;
+.name {
+    padding-left: 20vw;
 }
 
-.landingBottom {
-    margin-bottom:0;
-    margin-left: 17vw;
+.date {
+    padding-left: 25vw;
 }
 
-@media (max-width: 1200px){
-    .landingText {
+@media (max-width: 420px){
+    .backtoblackLandingText {
         color: #fff;
-        line-height: 1;
-        height: 100px;
-        font-size: 9vw;
+        font-size: 9.5vw;
+        margin-top: 9vw;
     }
-}
 
-@media (max-width: 1000px){
-    .landingText {
-        color: #fff;
-        line-height: 1;
-        height: 100px;
-        font-size: 12vw;
+    .name {
+        padding-left: 10vw;
     }
-}
+    
+    .date {
+        padding-left: 15vw;
+    }
 
-@media (max-width: 670px){
-    .landingText {
-        color: #fff;
-        line-height: 1;
-        height: 100px;
-        font-size: 15vw;
-    }
-}
-
-@media (max-width: 480px){
-    .landingTop {
-        padding-top: 5vh;
-    }
-    .landingBottom {
-        padding-top: 5vh;
-    }
 }
