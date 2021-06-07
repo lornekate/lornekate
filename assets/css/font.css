@@ -6,29 +6,24 @@
     src: url("/assets/fonts/back-to-black/back-to-black-demo/Back\ to\ Black\ Demo.ttf") format("truetype");
 }
 
-.backtoblackFont {
-    font-family: BacktoblackWeb;
-}
-
 .backtoblackLandingText {
+    font-family: BacktoblackWeb;
     color: #fff;
     font-size: 4vw;
-    margin-top: 4vw;
-}
-
-.name {
-    padding-left: 20vw;
-}
-
-.date {
-    padding-left: 25vw;
+    padding-top: 90px;
+    padding-left: 100px;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000;
 }
 
 @media (max-width: 420px){
     .backtoblackLandingText {
         color: #fff;
         font-size: 9.5vw;
-        margin-top: 9vw;
+        padding-top: 60px;
+        padding-left: 25px;
     }
 
     .name {
