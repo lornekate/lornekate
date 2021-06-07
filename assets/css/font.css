@@ -12,18 +12,21 @@
     font-size: 4vw;
     padding-top: 90px;
     padding-left: 100px;
-    text-shadow: -1px 1px 0 #000,
+    margin: 0px;
+    /* text-shadow: -1px 1px 0 #000,
                   1px 1px 0 #000,
                   1px -1px 0 #000,
-                 -1px -1px 0 #000;
+                 -1px -1px 0 #000; */
 }
 
 @media (max-width: 420px){
     .backtoblackLandingText {
+        margin: 0px;
         color: #fff;
         font-size: 9.5vw;
-        padding-top: 60px;
+        padding-top: 35px;
         padding-left: 25px;
+        padding-bottom: 10px;
     }
 
     .name {
