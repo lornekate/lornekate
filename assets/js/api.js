@@ -47,9 +47,9 @@ let api = (function(){
         return `
             <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="toActivate">Wedding</a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-dark" href="/wedding/info.html">Wedding Overview</a></li>
-                <li><a class="dropdown-item text-dark" href="/wedding/schedule.html">Schedule</a></li>
-                <li><a class="dropdown-item text-dark" href="/wedding/recommendations.html">Recommendations</a></li>
+                <li><a class="dropdown-item text-dark" href="/wedding/schedule.html">Event Schedule</a></li>
+                <li><a class="dropdown-item text-dark" href="/wedding/transportation.html">Transportation</a></li>
+                <li><a class="dropdown-item text-dark" href="/wedding/accommodations.html">Accommodations</a></li>
             </ul>`;
     }
 

@@ -10,12 +10,12 @@
   render: false
   dropdown: true
   dropitems:
-    - name: Wedding Overview
-      link: /wedding/info.html
-    - name: Schedule
+    - name: Event Schedule
       link: /wedding/schedule.html
-    - name: Recommendations
-      link: /wedding/recommendations.html
+    - name: Transportation
+      link: /wedding/transportation.html
+    - name: Accommodations
+      link: /wedding/accommodations.html
 - name: Registry
   render: true
   dropdown: true
