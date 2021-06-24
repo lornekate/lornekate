@@ -6,6 +6,10 @@
     src: url("/assets/fonts/back-to-black/back-to-black-demo/Back\ to\ Black\ Demo.ttf") format("truetype");
 }
 
+.fontBacktoBlack {
+    font-family: BacktoblackWeb;
+}
+
 .backtoblackLandingText {
     font-family: BacktoblackWeb;
     color: #fff;

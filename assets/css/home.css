@@ -1,6 +1,12 @@
 ---
 ---
 
+.weddingTitle {
+    background-image: url("/assets/images/temp/b10.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .gallery {
     background-image: url("/assets/images/temp/b10.svg");
     background-repeat: no-repeat;
@@ -20,3 +26,46 @@
     background-image: url("/assets/images/banner/banner.jpg");
     background-position: bottom 34% right 0%;
 }
+
+.map {
+    width: 750px;
+    height: 563px;
+}
+
+.schedule {
+    max-width: 750px;
+}
+
+.roomQuote {
+    max-width: 80px;
+}
+
+@media (max-width: 768px){ /* basically ipads */
+    .map {
+        width: 550px;
+        height: 413px;
+    }
+
+    .schedule { /* i had a reason for this... dont remember anymore*/
+        
+    }
+}
+
+@media (max-width: 576px) { /* for phones */
+    .map {
+        width: 330px;
+        height: 248px;
+    }
+}
+
+@media (max-width: 340px) { /* for iphone5 screen sizes */
+    .map {
+        width: 274px;
+        height: 207px;
+    }
+
+    .roomQuote {
+        max-width: 60px;
+    }
+}
+
