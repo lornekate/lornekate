@@ -28,7 +28,7 @@
 }
 
 .map {
-    width: 750px;
+    width: 670px;
     height: 563px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .roomQuote {
-    max-width: 80px;
+    max-width: 100px;
 }
 
 @media (max-width: 768px){ /* basically ipads */
@@ -49,6 +49,10 @@
     .schedule { /* i had a reason for this... dont remember anymore*/
         
     }
+
+    .customTop {
+        margin-top: 48px;
+    }
 }
 
 @media (max-width: 576px) { /* for phones */
@@ -56,16 +60,16 @@
         width: 330px;
         height: 248px;
     }
+
+    .roomQuote {
+        max-width: 70px;
+    }
 }
 
 @media (max-width: 340px) { /* for iphone5 screen sizes */
     .map {
         width: 274px;
         height: 207px;
-    }
-
-    .roomQuote {
-        max-width: 60px;
     }
 }
 
