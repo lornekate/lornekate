@@ -1,0 +1,44 @@
+---
+---
+
+@font-face {
+    font-family: BacktoblackWeb;
+    src: url("/assets/fonts/back-to-black/back-to-black-demo/Back\ to\ Black\ Demo.ttf") format("truetype");
+}
+
+.fontBacktoBlack {
+    font-family: BacktoblackWeb;
+}
+
+.backtoblackLandingText {
+    font-family: BacktoblackWeb;
+    color: #fff;
+    font-size: 4vw;
+    padding-top: 90px;
+    padding-left: 100px;
+    margin: 0px;
+    /* text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000; */
+}
+
+@media (max-width: 420px){
+    .backtoblackLandingText {
+        margin: 0px;
+        color: #fff;
+        font-size: 9.5vw;
+        padding-top: 35px;
+        padding-left: 25px;
+        padding-bottom: 10px;
+    }
+
+    .name {
+        padding-left: 10vw;
+    }
+    
+    .date {
+        padding-left: 15vw;
+    }
+
+}

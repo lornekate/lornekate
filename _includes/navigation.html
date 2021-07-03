@@ -4,28 +4,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto w-100">
+            <ul class="navbar-nav nav nav-tabs mr-auto w-100">
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
-                    <li clas="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{ item.name }}</a>
-                        <ul class="dropdown-menu">
-                        {% for subitem in item.dropitems %}
-                            <li><a class= "dropdown-item" href="{{ subitem.link }}">{{subitem.name}}</a></li>
-                        {% endfor %}
-                        </ul>
-                    </li>
+                        {% if item.render %}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{{ item.name }}</a>
+                                <ul class="dropdown-menu">
+                                {% for subitem in item.dropitems %}
+                                    <li><a class="dropdown-item text-dark" href="{{ subitem.link }}"{% if item.name == "Registry"%} target="_blank"{% endif %}>{{subitem.name}}</a></li>
+                                {% endfor %}
+                                </ul>
+                            </li>
+                        {% endif %}
                     {% else%}
-                    <li {% if page.url == item.link %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-                        <a href="{{ item.link }}" class="nav-link"> {{item.name}} </a>
-                    </li>
+                        <li  class="nav-item">
+                            <a href="{{ item.link }}" class="nav-link{% if page.url == item.link %}  fw-bold active" aria-current="page"{% else %} text-dark"{% endif %}>{{ item.name }}</a>
+                        </li>
                     {% endif %}
                 {% endfor %}
-                    
             </ul>
         </div>
         <div class="nav-item ms-auto">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" id="login-logout">Login</button>
         </div>
     </div>
 </nav>
@@ -39,8 +40,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <!-- TODO -->
-                LOGIN FUNCTIONALITY COMING SOON
+                <form id="loginForm">
+                    <div id="loginErrorMessage" class="text-danger"></div>
+                    <label for="login-code" class="form-label">Enter Passcode</label>
+                    <input name="login-code" placeholder="passcode" type="text" class="form-control" id="login-code" required/>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

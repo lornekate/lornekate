@@ -1,3 +1,9 @@
 *.lock
 .jekyll-cache/
 _site/
+.~lock*
+node_modules/
+package.json
+package-lock.json
+.jshintrc
+swapdim.py

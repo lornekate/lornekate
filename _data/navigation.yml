@@ -1,21 +1,28 @@
 - name: Home
+  render: true
   dropdown: false
   link: /
-- name: Events
+- name: Engagement Party
+  render: true
+  dropdown: false
+  link: /engagement-party.html
+- name: Wedding
+  render: false
   dropdown: true
   dropitems:
-    - name: Engagement Party
-      link: engage-party-info
-    - name: Wedding
-      link: wedding-info
-  link: /events
+    - name: Event Schedule
+      link: /wedding/schedule.html
+    - name: Transportation
+      link: /wedding/transportation.html
+    - name: Accommodations
+      link: /wedding/accommodations.html
 - name: Registry
+  render: true
   dropdown: true
   dropitems:
     - name: Crate & Barrel
-      link: # TODO NEEDS THE BARREL LINK
+      link: https://www.crateandbarrel.ca/gift-registry/kate-ilioukevitch-and-lorne-frilegh/r6147648
     - name: Hudson's Bay Company
-      link: # TODO NEEDS THE HB LINK
+      link: https://registry.thebay.com/registry/view-registry/lorne_and_kate
     - name: William Ashley
-      link: # TODO NEEDS THE WA LINK
-  link: /registry
+      link: https://www.williamashley.com/giftregistry/view/index/id/5L3TE/

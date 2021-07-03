@@ -1,7 +1,75 @@
 ---
 ---
 
-#landingImage {
-    width: 100%;
-    height: 150px;
+.weddingTitle {
+    background-image: url("/assets/images/temp/b10.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.gallery {
+    background-image: url("/assets/images/temp/b10.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.galCol {
+    max-width: 275px;
+}
+
+#landingImage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: peru;
+    width: 100%;
+    max-height: 200px;
+    background-image: url("/assets/images/banner/banner.jpg");
+    background-position: bottom 34% right 0%;
+}
+
+.map {
+    width: 670px;
+    height: 563px;
+}
+
+.schedule {
+    max-width: 750px;
+}
+
+.roomQuote {
+    max-width: 100px;
+}
+
+@media (max-width: 768px){ /* basically ipads */
+    .map {
+        width: 550px;
+        height: 413px;
+    }
+
+    .schedule { /* i had a reason for this... dont remember anymore*/
+        
+    }
+
+    .customTop {
+        margin-top: 48px;
+    }
+}
+
+@media (max-width: 576px) { /* for phones */
+    .map {
+        width: 330px;
+        height: 248px;
+    }
+
+    .roomQuote {
+        max-width: 70px;
+    }
+}
+
+@media (max-width: 340px) { /* for iphone5 screen sizes */
+    .map {
+        width: 274px;
+        height: 207px;
+    }
+}
+
