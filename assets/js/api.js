@@ -11,7 +11,7 @@ let api = (function(){
         localStorage.setItem('validated', 'false');
     }
     if(!localStorage.getItem('code')){
-        localStorage.setItem('code', 'wedding2022');
+        localStorage.setItem('code', 'Wedding2022');
     }
 
     /**
