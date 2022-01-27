@@ -2,20 +2,32 @@
   render: true
   dropdown: false
   link: /
-- name: Engagement Party
+# - name: Engagement Party
+#   render: true
+#   dropdown: false
+#   link: /engagement-party.html
+# - name: Wedding
+#   render: true # if you want password uncomment this
+#   dropdown: true
+#   dropitems:
+#     - name: Event Schedule
+#       link: /wedding/schedule.html
+#     - name: Transportation
+#       link: /wedding/transportation.html
+#     - name: Accommodations
+#       link: /wedding/accommodations.html
+- name: Event Schedule
   render: true
   dropdown: false
-  link: /engagement-party.html
-- name: Wedding
-  render: false
-  dropdown: true
-  dropitems:
-    - name: Event Schedule
-      link: /wedding/schedule.html
-    - name: Transportation
-      link: /wedding/transportation.html
-    - name: Accommodations
-      link: /wedding/accommodations.html
+  link: /wedding/schedule.html
+- name: Accomodation
+  render: true
+  dropdown: false
+  link: /wedding/accommodations.html
+- name: Transportation
+  render: true
+  dropdown: false
+  link: /wedding/transportation.html
 - name: Registry
   render: true
   dropdown: true

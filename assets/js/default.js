@@ -18,17 +18,17 @@
         fixFooter();
 
         // check validation w/ api
-        let res = api.checkAuthentication();
+        // let res = api.checkAuthentication();
         // if validation holds add wedding to the nav
-        if (res.authenticated) {
+        // if (res.authenticated) {
             // switch login out for logout
             // add eventlistener for logout
             // add wedding tab into nav
-            addLogout(res.data);
-        } else {
+            // addLogout(res.data);
+        // } else {
             // add eventlistener to the login form
-            document.getElementById("loginForm").addEventListener('submit', loginEventHandler);
-        }
+            // document.getElementById("loginForm").addEventListener('submit', loginEventHandler);
+        // }
     };
 
     /**
