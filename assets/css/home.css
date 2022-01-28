@@ -62,6 +62,10 @@
     margin: 3rem;
 }
 
+.m {
+    margin-left: 6rem;
+}
+
 @media (max-width: 768px){ /* basically ipads */
     .map {
         width: 550px;
@@ -83,6 +87,11 @@
     .customTop {
         margin-top: 48px;
     }
+
+    .m {
+        margin-left: 3rem;
+    }
+
 }
 
 @media (max-width: 576px) { /* for phones */
