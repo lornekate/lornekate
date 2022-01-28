@@ -58,6 +58,10 @@
     padding-right: 3rem;
 }
 
+.tranSpacing {
+    margin: 3rem;
+}
+
 @media (max-width: 768px){ /* basically ipads */
     .map {
         width: 550px;
@@ -122,6 +126,10 @@
         margin-right: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .tranSpacing {
+        margin: 1rem;
     }
 
 }
