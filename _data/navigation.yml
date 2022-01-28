@@ -20,7 +20,7 @@
   render: true
   dropdown: false
   link: /wedding/schedule.html
-- name: Accomodation
+- name: Accomodations
   render: true
   dropdown: false
   link: /wedding/accommodations.html
