@@ -28,7 +28,7 @@
   render: true
   dropdown: false
   link: /wedding/transportation.html
-- name: Registry
+- name: Registries
   render: true
   dropdown: true
   dropitems:
