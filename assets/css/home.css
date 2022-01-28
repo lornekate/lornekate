@@ -40,6 +40,24 @@
     max-width: 100px;
 }
 
+.tableSizing {
+    margin-top: 1rem;
+    margin-left: calc(1rem * 3);
+    padding-left: calc(1rem * 3);
+}
+
+.innerTableSizing {
+    margin-left: calc(1rem  * 0.5);
+    margin-left: calc(1rem * 0.5);
+}
+
+.accom-spacing {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
 @media (max-width: 768px){ /* basically ipads */
     .map {
         width: 550px;
@@ -48,6 +66,14 @@
 
     .schedule { /* i had a reason for this... dont remember anymore*/
         
+    }
+
+    .tableSizing {
+        margin-top: 0;
+        margin-left: 5rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
     }
 
     .customTop {
@@ -62,13 +88,47 @@
     }
 
     .roomQuote {
-        max-width: 70px;
+        max-width: 65px;
     }
+
+    .tableSizing {
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    
+    .innerTableSizing {
+        margin-left: 2rem;
+        margin-right: 0;
+        /* max-width: 75%; */
+    }
+
+    .long-link {
+        -ms-word-break: break-all;
+        word-break: break-all;
+
+        /* Non standard for webkit */
+        word-break: break-word;
+
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .accom-spacing {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
 }
 
 @media (max-width: 340px) { /* for iphone5 screen sizes */
     .map {
-        width: 274px;
+        width: 200px;
         height: 207px;
     }
 }
