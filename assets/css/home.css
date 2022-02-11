@@ -21,7 +21,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: peru;
-    width: 100%;
+    max-width: 100%;
+    height: 200px;
     max-height: 200px;
     background-image: url("/assets/images/banner/banner.jpg");
     background-position: bottom 34% right 0%;
