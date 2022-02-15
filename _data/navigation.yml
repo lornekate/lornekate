@@ -16,6 +16,10 @@
 #       link: /wedding/transportation.html
 #     - name: Accommodations
 #       link: /wedding/accommodations.html
+- name: Spain Entry Requirements
+  render: true
+  dropdown: false
+  link: /spainreq.html
 - name: Event Schedule
   render: true
   dropdown: false
