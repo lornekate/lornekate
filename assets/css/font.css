@@ -32,7 +32,8 @@
                  -1px -1px 0 #000; */
 }
 
-@media (max-width: 420px){
+
+@media (max-width: 430px){
     .backtoblackLandingText {
         margin: 0px;
         color: #fff;
